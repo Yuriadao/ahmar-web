@@ -1,0 +1,171 @@
+/* reset start */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  /* reset end */
+/*Carregamento fonte */
+
+    @font-face {
+	font-family: COVES;
+	src: url(./fonte/Coves\ Light.otf);
+}
+
+body {
+	
+	background-color:skyblue;
+	font-family: COVES;
+}
+
+
+
+/*ELEMTENTOS DE TEXTO*/
+
+header h1 {
+    color:gray;
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: center;
+   
+    
+}
+
+main h2 {
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+footer h3 {
+
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.limitador p {
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: justify;
+    color: whitesmoke;
+}
+.limitador h3 {
+    color:whitesmoke;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: justify;
+    margin-top: 50px;
+
+}
+
+.limitador h2 {
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: justify;
+    margin:0 0 0 20px;
+
+}
+.backgroundfooter {
+    background-color: lightpink;
+    width: 100vw;
+}
+
+
+
+
+
+header {
+
+    margin-top: 20px;
+}
+
+/*Formatando Main e seus herdeiros */
+
+
+
+
+
+
+.limitador {
+
+    width: 320px;
+    margin:50px;
+}
+
+.inline {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 50vh;
+}
+
+  /*Configuração imagem de rodapé */
+
+  footer {
+
+    margin: 50px 0;
+    width: 300px;
+    height: 20vh;
+    padding-top: 20px;
+  }
+  #call {
+    
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px 50px;
+
+  }
+
+  #whatsapp {
+    background-image: url("watsuppb.png");
+    margin-right: 10px;
+    }
+  
+  #whatsapp:hover {
+        background-image: url("wapcomcor.png");
+    }
+   
+    #instagram {
+        background-image: url("instapb.png");
+        margin-left: 10px;
+    }
+    
+    
+    #instagram:hover {
+        background-image: url("instacomcor.png");
+    }
+
+    .background {
+        background-position: center;
+        background-repeat: no-repeat;
+        padding:52px;
+        
+    }
+
+    @media (max-width: 800px) {
+        .inline {
+            flex-direction: column;
+            height: 80vh;
+        }
+
+        footer {
+
+            height: 250px;
+        }
+
+
+     
+    }
